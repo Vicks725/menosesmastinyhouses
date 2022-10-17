@@ -34,11 +34,11 @@ main {
     }
 
 header{
+    position: sticky;
     background: #FFFFFF;
     box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
-    overflow: auto;
     align-items: center;
-    position: sticky;
+    overflow: auto;
     }
 
 footer{
@@ -215,7 +215,7 @@ main>div {
     /*border: 3px red solid;*/
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin: auto;
     width: auto;
 }
@@ -292,7 +292,6 @@ main>div {
     align-items: center;
     text-align: center;
     padding: 10px;
-    margin: auto;
     font-size: 1.2rem;
     background: transparent;
 }
@@ -315,11 +314,22 @@ main>div {
     text-align: center;
     padding: 10px;
     margin: auto;
-    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1.2rem;
     background: transparent;
 }
+.sociales {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+  
 
 
 
