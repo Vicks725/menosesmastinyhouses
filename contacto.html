@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Description Page-->
-    <meta name="description" content="Somos una empresa innovadora dedicada a mejorar la calidad de vida de las personas asegurándoles un lugar cómodo y sustentable para vivir">
-    <title>Menos es Más - Contacto</title>
-    <!--css-->
-    <link rel="stylesheet" href="CSS/style.css">
-    <!--JS carrousel
-    <script src="app.js"></script>-->
-    <!--fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <!--iconos-->
-    <script src="https://kit.fontawesome.com/2d9296ec4f.js" crossorigin="anonymous"></script>
-    <!--favicon-->
-    <link rel="icon" href="Imagenes/lco Tiny 1.ico">
+   <!--css-->
+   <link rel="stylesheet" href="CSS/style.css">
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+       <!--favicon-->
+    <link rel="icon" href="/Imagenes/lco Tiny 1.ico">
+  
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<title>Contacto</title>
 </head>
 <body>
     <header>
-        <!--logo-->
+        <div>
+             <!--logo-->
         <div class="header-logo">
             <a href="index.html"><img src="Imagenes/logo tiny 1.png" alt="Logo del Sitio" width="180px" height="180px"></a>
         </div>
@@ -33,58 +33,160 @@
                 <li><a href="contacto.html">Contacto</a></li> 
             </ul>
         </nav>
-        <!--redes sociales-->
-        <div class="redes">
-            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            
         </div>
     </header>
     <main>
+    <div id="imagen">
 
-    </main>
-<footer>
-    <div class="logo-nav-redes">
-        <div class="footer-logo">
-            <a href="index.html"><img src="Imagenes/logo tiny 1.png" alt="Logo del Sitio" width="180px" height="180px"></a>
-        </div>
-        <!--menu y contacto-->
-        <nav class="footer-menubar">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="modelos.html">Modelos</a></li>
-            </ul>
-        </nav>
-        <div class="contacto">
-            <i class="fa-sharp fa-solid fa-location-dot"></i><p>Ciudad de Buenos Aires</p>
-            <i class="fa-solid fa-phone"></i><p>011 4252 6874</p>
-            <i class="fa-solid fa-paper-plane"></i><a href="contacto.html">Solicita una entrevista!</a>
-
-        </div>
-       <!--redes sociales-->
-       <div class="redes">
-        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> 
-        </div>
-        <!--newsletter-->
-        <div class="boletin">
-            <h3>Suscríbete a nuestro Newsletter</h3>
-            <form>
-                <input type="text" value="email">
-                <input type="button" value="Submit">
-            </form>
-        </div>
     </div>
-        <!--legales-->
-        <div class="footer-bottom">
-            <a href="legales.html">Aviso Legal y Política de Privacidad</a>
+    <div class="container" >
+            <h2>Contactanos</h2>
+             <!--consumo de appi-->
+                <form class="row g-3 mt" name="form" action="https://formspree.io/f/xoqblzbp" method="POST" >
+                   
+                  <div >
+                    <label for="name" class="form-label " >Nombre</label>
+                    <input 
+                      type="text" 
+                      id="name"
+                      name="nombre"
+                      placeholder="Escribe tu nombre"
+                      class="form-control"
+                      
+                    />
+                  </div>
+                  <div >
+                    <label for="phone" class="form-label " >Telefono</label>
+                    <input
+                      type="text"
+                      id="phone"
+                      name="telefono"
+                      placeholder="Dejanos tu telefono"
+                      class="form-control"
+        
+                    />
+                  </div>
+                  <div>
+                    <label for="email" class="form-label " >Correo Electrónico</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Ingreso tu correo electrónico"
+                      class="form-control"
+                      
+                    />
+                  </div>
+                  <div >
+                    <label for="mensaje" class="form-label " >Mensaje</label>
+                    <textarea
+                      id="mensaje"
+                      cols="40"
+                      rows="10"
+                      placeholder="Dejanos tu mensaje"
+                      name="mensaje"
+                      class="form-control"
+                     
+                    ></textarea>
+                  </div>
+                  
+                    <input
+                    type="button"
+                    value="Enviar"
+                    id="btn"
+                    onclick="valida_envia()"
+                    class="submit-btn d-grid gap-2 col-6 mx-auto"
+                  />
+                  
+                 
+                </form>
         </div>
-        <div class="derechos">
-            <p style="text-align: center"> © 2022 <code translate="no"> Menos es Más Tiny Houses. Todos los derechos reservados.</code></p>
+    </main>
+    <footer>
+        <div class="logo-nav-redes">
+            <div id="logo-nav">
+            <div class="footer-logo">
+                <a href="index.html"><img src="Imagenes/logo tiny 1.png" alt="Logo del Sitio"></a>
+            </div>
+            <!--menu y contacto-->
+            <nav class="footer-menubar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                </ul>
+            </nav>
         </div>
-    </footer>
+        <div>
+            <div class="contacto">
+
+                    <i class="fa-solid fa-paper-plane"></i><a href="contacto.html">Solicita una entrevista!</a>
+              
+            </div>
+        </div>
+           <!--redes sociales-->
+           <div class="redes">
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> 
+        </div>
+           
+        </div>
+        <div>
+           <!--legales-->
+            <div class="footer-bottom">
+           <a href="legales.html">Aviso Legal y Política de Privacidad</a>
+             </div>
+              <div class="derechos">
+             <p style="text-align: center"> © 2022 <code translate="no"> Menos es Más Tiny Houses. Todos los derechos reservados.</code></p>
+               </div>
+        </div>
+           
+        </footer>
+         <!--validacion de formulario-->
+    <script>
+        function valida_envia(){
+            if( document.form.nombre.value.length ==0){
+                alert("Tiene que ingresar su nombre")
+                document.form.nombre.focus()
+                return 0;
+            }
+            if( document.form.telefono.value.length ==0){
+                alert("Tiene que ingresar su telefono")
+                document.form.telefono.focus()
+                return 0;
+            }
+            if( document.form.email.value.length ==0){
+                alert("Tiene que ingresar su email")
+                document.form.email.focus()
+                return 0;
+            }if( document.form.mensaje.value.length ==0){
+                alert("Tiene que ingresar un mensaje")
+                document.form.mensaje.focus()
+                return 0;
+            }
+            alert("Muchas gracias por enviar el formulario");
+            document.form.submit();
+        }
+       
+
+        // const form= document.querySelector('form')
+
+        // form.addEventListener('submit',handleSubmit)
+        // async function handleSubmit(event){
+        //     event.preventDefault()
+        //     const form = new FormData(this)
+        //     const response= await fetch(this.action,{
+        //         method: this.method,
+        //         body:form,
+        //         headers: {
+        //             'Accept':'aplication/json'
+        //         }
+        //     })
+        //     if(response.ok)
+        //     this.reset()
+        //     alert('Gracias por contactarnos')
+        // }
+    </script>
 </body>
 </html>

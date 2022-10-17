@@ -1,7 +1,7 @@
 * {
    padding: 0;
    margin: 0;
-   font-family: lato;
+   font-family: 'Roboto', sans-serif;
 }
 
 html{
@@ -36,6 +36,9 @@ main {
 header{
     background: #FFFFFF;
     box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+    overflow: auto;
+    align-items: center;
+    position: sticky;
     }
 
 footer{
@@ -55,6 +58,7 @@ footer{
     display: inline-block;
     margin: 0 1rem 0 1rem;
     padding: 50px;
+    color: #7D6E83;
 
 }
 
@@ -162,16 +166,20 @@ main>div {
     width: auto;
     display: inline-block;
     margin: 0.5rem;
+    align-content: center;
 }
 
 .header-menubar {
-    /*border: 3px lightblue solid;*/
+    /*border: 3px lightblue solid;
+    top: auto;
+    width: auto;*/
     left: auto;
+    float: right;
     position: relative;
     top: auto;
     width: auto;
     display: inline-block;
-    margin: 0.5rem 0 0.5 1rem;
+    margin: 2rem 7rem 1.5rem 1rem;
 }
 
 .header-menubar ul {
@@ -181,6 +189,7 @@ main>div {
 .header-menubar li {
     float: left;
     font-weight: 700;
+    font-size: 4em;
     text-align: center;
     padding-bottom: 1rem;
     margin: 0 0.5rem 0 0.5rem;
@@ -217,7 +226,9 @@ main>div {
     display: inline-block;
     margin: 0.5rem;
 }
-
+.footer-logo img{
+    max-width: 150px;
+}
 .footer-menubar {
     /*border: 3px lightblue solid;*/
     left: auto;
@@ -225,7 +236,7 @@ main>div {
     top: auto;
     width: auto;
     display: inline-block;
-    margin: 0.5rem 0 0.5 1rem;
+    margin: 0.5rem 0rem 1.5 1rem;
 }
 
 .footer-menubar ul {
@@ -236,9 +247,11 @@ main>div {
     font-weight: 700;
     text-align: left;
     padding-bottom: 1rem;
-    margin: 0.2rem 0 0.2rem 0;
-    font-size: 1.2rem;
+    margin: 0.2rem 0 2rem 0;
+    font-size: 4em;
     background: transparent;
+    display: inline-block;
+   padding:20px;
  }
 
 .footer-menubar a {
@@ -300,7 +313,6 @@ main>div {
     /*border: 3px lightskyblue solid;*/
     align-items: center;
     text-align: center;
-    color: #7D6E83;
     padding: 10px;
     margin: auto;
     font-family: 'Times New Roman', Times, serif;
