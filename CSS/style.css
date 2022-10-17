@@ -170,7 +170,9 @@ main>div {
     margin: 0.5rem;
     align-content: center;
 }
-
+.header-logo img{
+    max-width: 200px;
+}
 .header-menubar {
     /*border: 3px lightblue solid;
     top: auto;
