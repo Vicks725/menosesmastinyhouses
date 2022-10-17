@@ -34,7 +34,9 @@ main {
     }
 
 header{
+    position: -webkit-sticky;  
     position: sticky;
+    top: 0; 
     background: #FFFFFF;
     box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
     align-items: center;
