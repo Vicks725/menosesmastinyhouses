@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Description Page-->
     <meta name="description" content="Somos una empresa innovadora dedicada a mejorar la calidad de vida de las personas asegurándoles un lugar cómodo y sustentable para vivir">
-    <title>Menos es Más - Inicio</title>
+    <title>Inicio</title>
     <!--css-->
     <link rel="stylesheet" href="CSS/style.css">
     <!--JS carrousel
@@ -23,7 +23,8 @@
 
 <body>
     <header>
-        <!--logo-->
+        <div>
+             <!--logo-->
         <div class="header-logo">
             <a href="index.html"><img src="Imagenes/logo tiny 1.png" alt="Logo del Sitio" width="180px" height="180px"></a>
         </div>
@@ -36,12 +37,6 @@
                 <li><a href="contacto.html">Contacto</a></li> 
             </ul>
         </nav>
-        <!--redes sociales-->
-        <div class="redes">
-            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            
         </div>
     </header>
     <main>
@@ -83,50 +78,67 @@
                 </ul>
             </div>
         </div>
-     
+        <div>
+            <!--redes sociales-->
+            <div class="sociales">
+                <a href="https://twitter.com/" target="_blank"
+                  ><img
+                    src="/Imagenes/icons8-twitter-24.png"
+                    alt="Twitter"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><img
+                    src="Imagenes/icons8-instagram-24.png"
+                    alt="Instagram"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+                <a href="https://www.facebook.com/ "target="_blank"
+                  ><img
+                    src="/Imagenes/icons8-facebook-nuevo-24.png"
+                    alt="Facebook"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+      
+                </div>
+            </div>
     </main>
     <footer>
-    <div class="logo-nav-redes">
-        <div class="footer-logo">
-            <a href="index.html"><img src="Imagenes/logo tiny 1.png" alt="Logo del Sitio" width="180px" height="180px"></a>
-        </div>
-        <!--menu y contacto-->
-        <nav class="footer-menubar">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="modelos.html">Modelos</a></li>
-            </ul>
-        </nav>
-        <div class="contacto">
+        <div class="logo-nav-redes">
+            <div id="logo-nav">
+            <div class="footer-logo">
+                <a href="index.html"><img src="Imagenes/logo tiny 1.png" alt="Logo del Sitio"></a>
+            </div>
+            <!--menu y contacto-->
+            <nav class="footer-menubar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                </ul>
+            </nav>
+            </div>
+            
+            <div>
+                <div class="contacto">
 
-                <i class="fa-sharp fa-solid fa-location-dot"></i><p>Ciudad de Buenos Aires</p>
-                <i class="fa-solid fa-phone"></i><p>011 4252 6874</p>
-                <i class="fa-solid fa-paper-plane"></i><a href="contacto.html">Solicita una entrevista!</a>
-          
-        </div>
-       <!--redes sociales-->
-       <div class="redes">
-        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> 
-        </div>
-        <!--newsletter-->
-        <div class="boletin">
-            <h3>Suscríbete a nuestro Newsletter</h3>
-            <form>
-                <input type="text" value="email">
-                <input type="button" value="Submit">
-            </form>
-        </div>
-    </div>
-        <!--legales-->
-        <div class="footer-bottom">
-            <a href="legales.html">Aviso Legal y Política de Privacidad</a>
-        </div>
-        <div class="derechos">
-            <p style="text-align: center"> © 2022 <code translate="no"> Menos es Más Tiny Houses. Todos los derechos reservados.</code></p>
-        </div>
+                    <i class="fa-solid fa-paper-plane"></i><a href="contacto.html">Solicita una entrevista!</a>
+              
+                </div>
+            </div>
+            
+                <!--legales-->
+                <div>
+                 <div class="footer-bottom">
+                    <a href="legales.html">Aviso Legal y Política de Privacidad</a>
+                 </div>
+                 
+                </div>
+        </div>  
+        </footer>
     </footer>
 </body>
 </html>
