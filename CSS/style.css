@@ -308,6 +308,20 @@ main>div {
     font-size: 1.2rem;
     background: transparent;
 }
+.sociales {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  
 
 
 

@@ -23,7 +23,98 @@
        
     </header>
     <main>
-
+    <div id="imagen">
+        
+    </div>
+    <div class="container" >
+            <h2>Contactanos</h2>
+             <!--consumo de appi-->
+                <form class="row g-3 mt" name="form" action="https://formspree.io/f/xoqblzbp" method="POST" >
+                   
+                  <div >
+                    <label for="name" class="form-label " >Nombre</label>
+                    <input 
+                      type="text" 
+                      id="name"
+                      name="nombre"
+                      placeholder="Escribe tu nombre"
+                      class="form-control"
+                      
+                    />
+                  </div>
+                  <div >
+                    <label for="phone" class="form-label " >Telefono</label>
+                    <input
+                      type="text"
+                      id="phone"
+                      name="telefono"
+                      placeholder="Dejanos tu telefono"
+                      class="form-control"
+        
+                    />
+                  </div>
+                  <div>
+                    <label for="email" class="form-label " >Correo Electrónico</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Ingreso tu correo electrónico"
+                      class="form-control"
+                      
+                    />
+                  </div>
+                  <div >
+                    <label for="mensaje" class="form-label " >Mensaje</label>
+                    <textarea
+                      id="mensaje"
+                      cols="40"
+                      rows="10"
+                      placeholder="Dejanos tu mensaje"
+                      name="mensaje"
+                      class="form-control"
+                     
+                    ></textarea>
+                  </div>
+                  
+                    <input
+                    type="button"
+                    value="Enviar"
+                    id="btn"
+                    onclick="valida_envia()"
+                    class="submit-btn d-grid gap-2 col-6 mx-auto"
+                  />
+                  
+                 
+                </form>
+        </div>
+        <div>
+            <!--redes sociales-->
+            <div class="sociales">
+                <a href="https://twitter.com/" target="_blank"
+                  ><img
+                    src="/Imagenes/icons8-twitter-24.png"
+                    alt="Twitter"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><img
+                    src="Imagenes/icons8-instagram-24.png"
+                    alt="Instagram"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+                <a href="https://www.facebook.com/ "target="_blank"
+                  ><img
+                    src="/Imagenes/icons8-facebook-nuevo-24.png"
+                    alt="Facebook"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+      
+                </div>
+            </div>
     </main>
     <footer>
  
