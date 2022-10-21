@@ -334,7 +334,13 @@ main>div {
     width: 2rem;
     height: 2rem;
   
+  }
+  form{
+      padding:  5% 20% 5% 20%;
+  }
 
+#direccion-mapas article{
+display: inline-block;
 
-
+}
 
