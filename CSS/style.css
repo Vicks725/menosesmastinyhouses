@@ -1,4 +1,5 @@
 * {
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    font-family: 'Roboto', sans-serif;
@@ -165,12 +166,14 @@ main>div {
 
 .header-logo {
     /*border: 3px blue solid;*/
+    display: flex;
     width: auto;
     display: inline-block;
     margin: 0.5rem;
     align-content: center;
 }
 .header-logo img{
+    display: flex;
     max-width: 180px;
 }
 .header-menubar {
@@ -338,9 +341,26 @@ main>div {
   form{
       padding:  5% 20% 5% 20%;
   }
+  .contenedor{
+      display: flex;
+      flex-direction: row; 
+      flex-wrap: wrap;
 
-#direccion-mapas article{
-display: inline-block;
-
+  }
+  .column{
+     
+      flex: 40%;
+      padding: 20px;
+  }
+@media screen and (max-width: 992px){
+    .column{
+        flex: 1 1 auto;
+    
+    }
 }
-
+@media screen and (max-width: 600px){
+    .row{
+        flex-direction: column;
+        
+    }
+}
