@@ -20,21 +20,29 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="header-menubar">
             <!--logo-->
-       <div class="header-logo">
+         <div id="logo">
            <a href="index.html"><img src="Imagenes/logo tiny 1.png" alt="Logo del Sitio" ></a>
-       </div>
+         </div>
+         <!--menu hamburguesa-->
+         <input type="checkbox" id="menu-check">
+         <label id="menu" for="menu-check">
+           <span id="menu-abrir">&#9776;</span>
+           <span id="menu-cerrar">X</span>
+         </label>
        <!--barra de menu-->
-       <nav class="header-menubar">
+       <nav>
            <ul>
                <li><a href="index.html">Inicio</a></li>
                <li><a href="nosotros.html">Nosotros</a></li>
                <li><a href="modelos.html">Modelos</a></li>
                <li><a href="contacto.html">Contacto</a></li> 
            </ul>
-       </nav>
+         </nav>
+           
        </div>
+       
     </header>
     <main>
         <div class="container">

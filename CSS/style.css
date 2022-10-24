@@ -17,8 +17,7 @@ h2 {
 }
 
 body, header, main, footer {
-    /*border: 4px solid black;*/
-    min-height: 50px;
+   
     margin: 0.5rem;
     min-width: 400px;
     }
@@ -38,11 +37,11 @@ header{
     position: -webkit-sticky;  
     position: sticky;
     top: 0; 
+    left: 0;
     background: #FFFFFF;
-    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
-    align-items: center;
-    overflow: auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
+  
 
 footer{
     margin:50px auto 0;
@@ -56,7 +55,7 @@ footer{
 
 /* contenido ppal */
 
-main>div {
+main > div {
     /*border: 3px orange solid;*/
     min-height: 180px;
     margin: 0.5rem;
@@ -146,43 +145,123 @@ main>div {
 /* logo y menu header*/
 
 
-.header-logo {
-    /*border: 3px blue solid;*/
-    display: flex;
-    width: auto;
-    display: inline-block;
-    margin: 0.5rem;
-    align-content: center;
-}
-.header-logo img{
+
+.header-menubar img{
     display: flex;
     max-width: 180px;
 }
 .header-menubar {
-    /*border: 3px lightblue solid; 
-    top: auto;
-    width: auto;*/
-    left: auto;
-    float: right;
+   
+  
     position: relative;
     top: auto;
     width: auto;
-    display: inline-block;
-    margin: 2rem 7rem 1.5rem 1rem;
+    display: inline-flex;
+   place-content: flex-start;
 }
 
 .header-menubar ul {
-    list-style: none; 
+    list-style-type: none; 
  }
+ .header-menubar nav{
+     
+     width: 70%;
+     display:flex;
+     
+     place-content: space-between;
+ }
+ /*esto es para que desaparezca*/
+#menu, #menu-check{
+    display:none;
+}
+/* menu hamburguesa*/
+@media only screen and (max-widht: 900px){
+    header div.header-menubar, header div.header-menubar ul, header div.header-menubar ul li {
+        display: inline;
+    }
+    header div.header-menubar nav{
+        width:100%;
+        display: inline;
+    }
+}
+@media only screen and (max-width: 700px){
+.header-menubar #logo{
+   /* display:none;*/
+
+}
+.header-menubar a{
+    paddig: 0;
+}
+.header-menubar{
+    display: flex;
+    place-content: space-between;
+}
+#menu-check:not(:checked) ~ nav{
+    display: none;
+}
+#menu-check:checked ~nav {
+    display:block;
+}
+#menu{
+    display: block;
+    color:#7D6E83;
+    background-color: #DFD3C3;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 3px solid grey;
+    border-radius: 0.3em;
+    position: absolute;
+    right: 0.5em;
+    top:0.5em;
+    z-index: 9999;
+    
+}
+#menu:hover{
+    color:#F5EFE6;
+    background-color: #7D6E83;
+}
+#menu-cerrar{
+    display: none;
+}
+#menu-check:checked ~ label #menu-abrir {
+    display: none;
+}
+#menu-check:checked ~ label #menu-cerrar {
+    display: block;
+}
+header div.header-menubar nav{
+    position:absolute;
+    top:0;
+    right: 0;
+    height:100%;
+    background-color:#DFD3C3;
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+    opacity: 0.8;
+    color: #F5EFE6;
+}
+header div.header-menubar nav ul a {
+    color:#7D6E83;
+}
+header div.header-menubar ul, header div.header-menubar ul li{
+     position: relative;
+        display: inline-block;
+    text-align: right;
+}
+main {
+    text-align: center;
+}
+}
 
 .header-menubar li {
     float: left;
     font-weight: 700;
     font-size: 4em;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 0,5rem;
     margin: 0 0.5rem 0 0.5rem;
  }
+
 
 .header-menubar a {
     text-decoration: none;
@@ -330,7 +409,10 @@ main>div {
      
       flex: 40%;
       padding: 20px;
+      text-align: center;
+      font-size: medium;
   }
+ 
 @media screen and (max-width: 992px){
     .column{
         flex: 1 1 auto;
@@ -340,6 +422,7 @@ main>div {
 @media screen and (max-width: 600px){
     .row{
         flex-direction: column;
+
         
     }
 }
