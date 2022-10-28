@@ -10,10 +10,18 @@ html{
     height: 100%;
 }
 
+h1 {
+    text-align: left;
+    font-size: 2rem;
+    padding-top: 50px; 
+    color: #9F8772;
+}
+
 h2 {
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     padding-top: 50px;
+    color: #9F8772;
 }
 
 body, header, main, footer {
@@ -105,18 +113,31 @@ main > div {
 
 
 .secciones{
-    /*border: 3px greenyellow solid;*/
+  /* border: 3px greenyellow solid; */
     min-height: 50px;
     margin: 0.5rem;
     justify-content: center;
     align-items: center;
+    display: inline-block;
+    color: #7D6E83;
+    font-weight: bold;
+    
  }
 
 .secciones article {
-    /*border: 3px brown solid;*/
+   /* border: 3px brown solid; */
     min-height: 50px;
     margin: 0.5rem;
+    font-size: 1rem;
+    color: #7D6E83;
+    font-weight: lighter;
     
+}
+
+.titular {
+    font-size: 1rem;
+    color: #7D6E83;
+    font-weight: bold;
 }
 
 .animadas {
@@ -126,20 +147,21 @@ main > div {
     justify-content: center;
     align-items: center;
 	overflow: hidden;
-    
+    transition: all 1s ease 2s;
+
 }
 
 .animadas ul {
     display: flex;
     padding: 10px;
-    animation: pulse 1s;
 }
 
 .animadas li {
     width: 100%;
     list-style: none;
+    padding: 10px;
+}
 
-}	
 
 
 /* logo y menu header*/
