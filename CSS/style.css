@@ -448,3 +448,170 @@ main {
         
     }
 }
+
+
+
+
+/* Pagina modelos */
+
+.posteo-list{
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+    
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.posteo-img-1{
+    background: url(../Imagenes/image-01.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover; /* agarra mejor la imagen*/
+    background-position: center;
+    transition: .2s; /*ayuda a hacer el efecto que se expande*/
+}
+
+.posteo-img-2{
+    background: url(../Imagenes/image-02.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover; 
+    background-position: center;
+    transition: .2s; 
+    
+}
+
+.posteo-img-3{
+    background: url(../Imagenes/image-03.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover; 
+    background-position: center;
+    transition: .2s; 
+    
+}
+
+.posteo-img-4{
+    background: url(../Imagenes/image-04.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover; 
+    background-position: center;
+    transition: .2s; 
+    
+}
+
+.posteo-img-5{
+    background: url(../Imagenes/image-05.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover; 
+    background-position: center;
+    transition: .2s; 
+    
+}
+
+.posteo-img-6{
+    background: url(../Imagenes/image-06.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover; 
+    background-position: center;
+    transition: .2s; 
+    
+}
+
+
+
+.posteo{
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+    overflow: hidden; /*para que no se salga del contenedor*/
+    transition: .2s;
+
+}
+
+.posteo:hover{
+    transform: translateY(-4px); /*sube un poco el contenedor*/
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+}
+
+.posteo-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer; /* cuando pasa el cursor por encima, aparece la mano*/
+}
+
+.posteo:hover .posteo-img-1,
+.posteo:hover .posteo-img-2,
+.posteo:hover .posteo-img-3,
+.posteo:hover .posteo-img-4,
+.posteo:hover .posteo-img-5,
+.posteo:hover .posteo-img-6{
+    transform: scale(1.1);
+}
+
+.posteo-body{
+    padding: 10px;
+    text-align: center;
+}
+
+.posteo-body span{
+    display: inline-block; /*para que ocupe un margin o padding si es que lo agrego*/
+    color: black;
+    margin-bottom: 1px;
+}
+
+.posteo-body h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+
+}
+
+
+.posteo-body p{
+    font-family: sans-serif;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.posteo-body .posteo-link{
+    display: block;
+    text-decoration: none;
+    padding: 7.5px;
+    background: #9F8772;
+    color: white;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.posteo-body .posteo-link:hover{
+    background: #C8DBBE;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 840px){
+    .contenido{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .contenido{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
